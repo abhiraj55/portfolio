@@ -1,0 +1,168 @@
+ * {
+  box-sizing: border-box;
+  /* border: 4px solid red; */
+}
+body{
+  min-width: 360px;
+}
+header {
+  margin-top:0;
+  height: 70px;
+  background-color:black;
+  opacity: .9;
+}
+header h1{
+text-align: center;
+padding:15px;
+margin: 0;
+color: goldenrod;
+text-transform: capitalize;
+}
+.animated-line{
+  height: 4px;
+  background-image: linear-gradient(to right, blue, red, yellow);
+  animation-name: aniline;
+  animation-timing-function:ease-out;
+  animation-duration: 2s;
+  animation-iteration-count: 4;
+
+}
+@keyframes aniline{
+  0%{
+    background-image:  linear-gradient(to right, blue,gold, red, yellow);
+  }
+  25%{
+    background-image:  linear-gradient(to right,yellow, blue,gold, red, );
+  }
+  50%{
+    background-image:  linear-gradient(to right, gold,red, yellow);
+  }
+  50%{
+    background-image:  linear-gradient(to left,green,gold, red, yellow);
+  }
+  100%{
+    background-image:  linear-gradient(to right, gold, red,blue, yellow);
+  }
+  
+}
+.bar {
+  margin-left: 20px;
+  margin-top: -50px;
+  border: 2px solid blue ;
+  width: 35px;
+  height: 35px;
+  cursor: hand;
+padding: 3px;
+  opacity: .7;
+  box-shadow: 5px 4px 10px grey ;
+}
+.bar:hover{
+  opacity: 1;
+}
+.bar i {
+  font-size: 20px;
+  padding: 4px;
+  margin-top: 0;
+  color: goldenrod;
+}
+@media screen and (max-width: 450px) {
+  .bar {
+    width: 25px;
+    height: 25px;
+  }
+  .bar i {
+    font-size: 13px;
+    padding: 3px;
+    margin:0 ;
+    color: goldenrod;
+  }
+}
+section{
+  width: 100%;
+}
+aside {
+  width: 16%;
+  float: left;
+  transition-timing-function: ease;
+  background-color: black;
+  /* height: 2065px; */
+  opacity: .9;
+  z-index:99 ;
+  border-right: 2px solid grey;
+}
+/* aside heights  */
+.profile{
+  height: 2030px;
+}
+.project{
+  height: 2443px;
+}
+.services{
+  height: 1112px;
+}
+.contacts{
+  height: 837px;
+}
+aside div{
+  width: 90%;
+  margin-left: 5%;
+}
+aside img{
+  border: 4px solid goldenrod;
+  border-radius: 50%;
+  min-height: 130px;
+  min-width: 130px;
+}
+aside span p{
+  color: red;
+  font-size: 40px;
+margin: 5px 0px 0px 5px;
+padding: 0px 10px 0px 10px;
+}
+aside nav {
+    margin: 0px;
+    padding: 0px;
+  width:100%;
+}
+@media screen and (max-width: 900px) {
+  aside nav {
+    position: absolute;
+    opacity: 0.9;
+  }
+  aside{
+    position: absolute;
+    min-width: 200px;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 900px) {
+  .bar {
+    display: none;
+  }
+aside span p{
+  display: none;
+}
+}
+.nav li{
+  text-align:justify;
+  text-transform: capitalize;
+  border-bottom: 1px solid goldenrod;
+  padding: 10px;
+}
+/* .nav li:active{
+  color: green;
+} */
+.nav li a:link{
+  color: blue;
+  font-size:19px;
+  letter-spacing: 1px;
+margin-left: 20px;
+  text-align: justify;
+  white-space: nowrap;
+}
+
+.nav li a:hover{
+  color: goldenrod;
+  font-size: 20px;
+  background-color: transparent;
+}

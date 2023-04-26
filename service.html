@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body onload="barchng()">
+    <header>
+      <h1>portfolio</h1>
+      <div class="bar" data-toggle="collapse" data-target="#mynav">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="animated-line"></div>
+    <section id="box">
+      <aside id="mynav" class="collapse in services">
+        <div>  
+          <a href="#mynav" data-toggle="collapse">  <span  class="close"><p>&times;</p></span></a>
+
+          <br /> <img  class="img-responsive" src="images/pic1 (1).jpg" alt="nav-round-img"> </div>
+        <nav>
+          <ul class="nav nav-pills nav-stacked">
+            <li></li>
+            <li><a href="index.html">about me</a></li>
+            <li><a href="project.html">project</a></li>
+            <li><a href="service.html">services</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article>
+        <div class="container service">
+          <h1>services.
+          </h1>
+        <div class="row">   
+<div class="col-sm-4 col-xs-12">
+  <img src="images/service1.jpg" alt="">
+  <h2>web developer</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat aperiam iusto veritatis expedita et?</p>
+  <a href="">read more</a>
+</div>
+<div class="col-sm-4 col-xs-12">
+  <img src="images/service2.jpg" alt="">
+
+  <h2>app developer</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat aperiam iusto veritatis expedita et?</p>
+  <a href="">read more</a>
+</div>
+<div class="col-sm-4 col-xs-12">
+  <img src="images/service3.jpg" alt="">
+
+  <h2>web handler</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat aperiam iusto veritatis expedita et?</p>
+
+  <a href="">read more</a>
+</div>
+        </div>
+        <div class="row">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nam aspernatur nihil, exercitationem vel repellendus animi repudiandae? Reiciendis, quidem ipsa debitis, voluptatum soluta consequatur quibusdam numquam dolorum consequuntur voluptate eos in adipisci iure modi quae nisi iusto aperiam sequi mollitia eius deserunt unde error. Nulla architecto adipisci molestias quasi aperiam, magni odit ad expedita inventore numquam a labore. Aliquam, debitis. Quidem reprehenderit sit sapiente quod voluptatum eius quasi praesentium, assumenda dolore nisi consequatur dolorum nulla neque ea ducimus quia hic architecto molestias ipsa enim. Nam amet cumque totam hic, cum minus veritatis nemo voluptas necessitatibus rem aperiam repudiandae illo aut?</p>
+        </div>
+        </div>
+   </article>
+   </section>
+    <!-- foooter -->
+      <div class="conatiner-fluid footer">
+        <div class="rows">
+          <div class="col-sm-4 col-xs-6 link">
+            <h3>useful links</h3>
+            <a href="project.html">project</a><br>
+            <a href="service.html">service</a><br>
+            <a href="contact.html">contact</a>
+      
+          </div>
+          <div class="col-sm-4 col-xs-6">
+            <h3>contact me</h3>
+            <br />
+            <p>
+              <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                <a href="#">tehta,jehanabad</a>
+            </p>
+            <p>
+              <span><i class="fa-solid fa-phone-volume"></i><a href="#">  8789377224</a></span>
+            </p>
+          
+            <p>
+              <span><i class="fa-sharp fa-solid fa-envelope"></i></span>
+              <a href="#">raj8789377224@gmail.com</a>
+            </p>
+            <p></p>
+          </div>
+      
+          <div class="col-sm-4 col-xs-12">
+            <h3>follow me</h3>
+            <a href="https://m.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="clearfix visible-xs-6"></div>
+        <div class="row">
+          <div class="col-sm-12"><hr>
+          <p>All &copy rights reserve  <a href="#"><span>A</span>bhi</a></p>
+        </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        const sbarchange= document.getElementById('box');
+        var cls = document.getElementById('mynav');
+        function barchng() {
+          cls.getAttribute("class");
+          let wsize = sbarchange.offsetWidth;
+          if (wsize <= 900) {
+           cls.setAttribute("class", "collapse");
+    
+          }
+          else {
+            cls.setAttribute("class", "collapse in services");
+    
+          }
+    
+        }
+      </script>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>

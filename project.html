@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body onload="barchng()">
+    <header>
+      <h1>portfolio</h1>
+      <div class="bar" data-toggle="collapse" data-target="#mynav">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="animated-line"></div>
+    <section id="box">
+      <aside id="mynav" class=" collapse in project">
+        <div>  
+          <a href="#mynav" data-toggle="collapse">  <span  class="close"><p>&times;</p></span></a> 
+          <br /> <img  class="img-responsive" src="images/pic1 (1).jpg" alt="nav-round-img"> </div>
+        <nav>
+          <ul class="nav nav-pills nav-stacked">
+            <li></li>
+            <li><a href="index.html">about me</a></li>
+            <li><a href="project.html">project</a></li>
+            <li><a href="service.html">services</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article>
+  <div class="container project-view">
+    <div class="row">
+      <a href="https://school108.netlify.com"  data-toggle="tooltip" title="click to open"  target="project1" data-placement="top" ><h1>school project.</h1></a>
+    
+            <iframe src=" " name="project1" frameborder="0">school frame</iframe>
+        
+      </div>
+      <div class="row">
+        <a href="https://resturant32.netlify.com"  data-toggle="tooltip" title="click to open" target="project2" data-placement="top" ><h1>resturant project.</h1></a>
+        
+            <iframe src=" " name="project2" frameborder="0">school frame</iframe>
+      
+      </div>
+      <div class="row">
+        <a href="https://flexuses.netlify.com"  data-toggle="tooltip" title="click to open" target="project3" data-placement="top" ><h1>flex responsive project.</h1></a>
+        <iframe src=" " name="project3" frameborder="0">school frame</iframe>
+  
+  </div>
+      </div>
+   </article>
+   </section>
+    <!-- foooter -->
+      <div class="conatiner-fluid footer">
+        <div class="rows">
+          <div class="col-sm-4 col-xs-6 link">
+            <h3>useful links</h3>
+            <a href="project.html">project</a><br>
+            <a href="service.html">service</a><br>
+            <a href="contact.html">contact</a>
+      
+          </div>
+          <div class="col-sm-4 col-xs-6">
+            <h3>contact me</h3>
+            <br />
+            <p>
+              <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                <a href="#">tehta,jehanabad</a>
+            </p>
+            <p>
+              <span><i class="fa-solid fa-phone-volume"></i><a href="#">  8789377224</a></span>
+            </p>
+          
+            <p>
+              <span><i class="fa-sharp fa-solid fa-envelope"></i></span>
+              <a href="#">raj8789377224@gmail.com</a>
+            </p>
+            <p></p>
+          </div>
+      
+          <div class="col-sm-4 col-xs-12">
+            <h3>follow me</h3>
+            <a href="https://m.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="clearfix visible-xs-6"></div>
+        <div class="row">
+          <div class="col-sm-12"><hr> 
+          <p>All &copy rights reserve  <a href="#"><span>A</span>bhi</a></p>
+        </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        const sbarchange= document.getElementById('box');
+        var cls = document.getElementById('mynav');
+        function barchng() {
+          cls.getAttribute("class");
+          let wsize = sbarchange.offsetWidth;
+          if (wsize <= 900) {
+           cls.setAttribute("class", "collapse");
+    
+          }
+          else {
+            cls.setAttribute("class", "collapse in project");
+    
+          }
+    
+        }
+      </script>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
